@@ -1,0 +1,17 @@
+print("Welcome to our bank!")
+
+name=input('please enter your name:')
+civic_number=input("please enter your civic number:")
+amount_of_money=float (input('how much money do you have:'))
+interest_rate=float(input ('what is the inetrest rate, write in percentage:'))
+new_deposit=float(input('how much money you want to deposit'))
+amount_of_the_year= amount_of_money *(1+(interest_rate/100))
+
+print('\n your information:')
+print(name)
+print(civic_number)
+print(amount_of_money)
+print(interest_rate)
+print(F'\nbalance after one year you will have:{amount_of_the_year}SEK')
+print(amount_of_the_year +new_deposit)
+print(F'\n new_deposit:{new_deposit}')
