@@ -1,0 +1,26 @@
+print("Welcome to the money bag transport calculator(M.B.T.C)")
+print("-----------------------------------------------------------------")
+print()
+truck_size = int(input("what is the volume of the truck(>=100L):"))
+while (truck_size < 100):
+    if (truck_size < 100):
+        truck_size = int(input("what is the volume of the truck(>=100L):"))
+        print()
+        continue
+if(truck_size >= 100):
+    print("packing plan")
+    print("-----------------------------------------------------------------")
+    big_bags = (truck_size // 80)
+    rem_1 = (truck_size % 80)
+    print(big_bags, "big bags")
+    med_bags = (rem_1 // 50)
+    rem_2 = (rem_1 % 50)
+    print(med_bags, "medium bags")
+    small_bags = (rem_2 // 20)
+    rem_3 = (rem_2 % 20)
+    print(small_bags, "small bags")
+    print()
+    print("space left:", rem_3, "L")
+total_value = ((big_bags * 60000) + (med_bags * 30000) + (small_bags * 10000))
+print("Total value:", total_value, end="")
+print("kr")
